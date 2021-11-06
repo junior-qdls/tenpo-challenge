@@ -1,3 +1,7 @@
+# The image of this App is at https://hub.docker.com/r/juniorqdls/tests
+Or just pull the image https://hub.docker.com/r/juniorqdls/tests
+
+
 # tenpo-challenge
 In order to deploy the App, we need to do next steps first:
 
@@ -32,9 +36,15 @@ Then Log in into the app, using the username and password , you've passed in the
 
 Once you've been login you can play around the following apis:
 
-challenge-add : Add numbers and get the result as response
-audit-history: Get the history of tracks actions an user does to every Api , query params page and size
-logout: Log out from the app.
+challenge-add : 
+    Add numbers and get the result as response
+    
+audit-history: 
+    Get the history of tracks actions an user does to every Api
+    Query params: page and size , both integers    
+
+logout: 
+    Log out from the app.
 
 To get Access the swagger file go to:
 
