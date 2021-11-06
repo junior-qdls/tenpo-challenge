@@ -30,20 +30,20 @@ sudo docker compose up -d .
 Use the postman collection included in the source code
 tenpo.postman_collection.json
 
-First Use the sign up sample request in order to create a user
+First Use the **sign up** sample request in order to create a user
 
-Then Log in into the app, using the username and password , you've passed in the sign up
+Then Log in into the app usin the **login request**, using the username and password , you've passed in the sign up
 
 Once you've been login you can play around the following apis:
 
-challenge-add : 
+**challenge-add :** 
     Add numbers and get the result as response
     
-audit-history: 
+**audit-history :**
     Get the history of tracks actions an user does to every Api
     Query params: page and size , both integers    
-
-logout: 
+    
+**logout :**
     Log out from the app.
 
 To get Access the swagger file go to:
