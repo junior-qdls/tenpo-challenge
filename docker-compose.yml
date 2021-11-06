@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:9.4
+    environment:
+      POSTGRES_PASSWORD: Peru123
+    volumes:
+      - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  app:
+    depends_on:
+      - postgres
+    container_name: tenpo-challenge
+    image: localhost:5000/juniorqdls/tests:latest
+    environment:
+      SPRING_APPLICATION_JSON: '{
+            "spring.datasource.url"  : "jdbc:postgresql://postgres:5432/postgres?useSSL=false",
+            "spring.datasource.username" : "postgres",
+            "spring.datasource.password" : "Peru123"
+          }'
+    ports:
+      - "8080:8080"
