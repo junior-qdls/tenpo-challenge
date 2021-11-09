@@ -13,7 +13,7 @@ services:
     depends_on:
       - postgres
     container_name: tenpo-challenge
-    image: localhost:5000/juniorqdls/tests:latest
+    image: juniorqdls/tests:latest
     environment:
       SPRING_APPLICATION_JSON: '{
             "spring.datasource.url"  : "jdbc:postgresql://postgres:5432/postgres?useSSL=false",
