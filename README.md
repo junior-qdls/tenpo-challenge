@@ -50,6 +50,20 @@ To get Access the swagger file go to:
 
 127.0.0.1:8080/swagger-ui
 
+# How to run the tests
+
+First you need to run :
+```
+docker compose up -d 
+```
+
+and then:
+```
+mvn test
+```
+
+There should be a database running first in order to run the app's test folder
+
 
 
 
